@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="practical2.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Student Survey Form</h1>
+    <form action="#" method="post">
+
+      <label>Full Name:</label><br>
+      <input type="text" name="name" placeholder="Enter your name"><br><br>
+
+      <label>Email Address:</label><br>
+      <input type="email" name="email" placeholder="Enter your email"><br><br>
+
+      <label>Age:</label><br>
+      <input type="number" name="age" placeholder="Enter your age"><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="other"> Other<br><br>
+
+      <label>Which subjects do you enjoy?</label><br>
+      <input type="checkbox" name="subject" value="math"> Mathematics<br>
+      <input type="checkbox" name="subject" value="science"> Science<br>
+      <input type="checkbox" name="subject" value="computer"> Computer<br>
+      <input type="checkbox" name="subject" value="english"> English<br><br>
+
+      <label>How do you rate your college?</label><br>
+      <select name="rating">
+        <option value="">-- Select Rating --</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="poor">Poor</option>
+      </select><br><br>
+
+      <label>Comments / Suggestions:</label><br>
+      <textarea name="comments" rows="4" cols="40" placeholder="Write here..."></textarea><br><br>
+
+      <input type="submit" value="Submit Survey">
+      <input type="reset" value="Reset">
+
+    </form>
+  </div>
+
+</body>
+</html>

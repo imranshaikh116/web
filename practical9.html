@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Library Signup</title>
+  <link rel="stylesheet" href="practical9.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>College Library Signup</h2>
+    <form id="signupForm" action="#" method="post" novalidate>
+
+      <label>Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter full name">
+      <span class="error" id="nameError"></span>
+
+      <label>Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter email">
+      <span class="error" id="emailError"></span>
+
+      <label>Mobile Number:</label>
+      <input type="text" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number">
+      <span class="error" id="mobileError"></span>
+
+      <label>Department:</label>
+      <input type="text" id="dept" name="dept" placeholder="Enter your department">
+      <span class="error" id="deptError"></span>
+
+      <label>Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password">
+      <span class="error" id="passwordError"></span>
+
+      <button type="button" onclick="validateForm()">Sign Up</button>
+
+      <p id="successMsg" class="success"></p>
+    </form>
+  </div>
+
+  <script src="practical9.js"></script>
+</body>
+</html>

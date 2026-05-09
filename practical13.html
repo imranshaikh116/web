@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Competition Registration</title>
+  <link rel="stylesheet" href="practical13.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Project Competition Registration</h2>
+    <form action="practical13_process.php" method="POST">
+
+      <label>Full Name:</label>
+      <input type="text" name="name" placeholder="Enter your name" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" placeholder="Enter email" required>
+
+      <label>Mobile Number:</label>
+      <input type="text" name="mobile" placeholder="Enter mobile number" required>
+
+      <label>College:</label>
+      <input type="text" name="college" placeholder="Enter college name" required>
+
+      <label>Project Title:</label>
+      <input type="text" name="project" placeholder="Enter project title" required>
+
+      <label>Category:</label>
+      <select name="category" required>
+        <option value="">-- Select Category --</option>
+        <option value="Web Development">Web Development</option>
+        <option value="AI / ML">AI / ML</option>
+        <option value="IoT">IoT</option>
+        <option value="Mobile App">Mobile App</option>
+        <option value="Cybersecurity">Cybersecurity</option>
+      </select>
+
+      <label>Team Size:</label>
+      <input type="number" name="team_size" min="1" max="5" placeholder="Number of members" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>

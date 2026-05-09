@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="practical21.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Student Registration Form</h2>
+
+    <div id="successMsg" class="success" style="display:none;">
+      ✅ Registration Successful! Welcome aboard.
+    </div>
+
+    <form id="regForm" novalidate>
+
+      <label>Full Name:</label>
+      <input type="text" id="name" placeholder="Enter full name">
+      <span class="error" id="nameError"></span>
+
+      <label>Email:</label>
+      <input type="email" id="email" placeholder="Enter email">
+      <span class="error" id="emailError"></span>
+
+      <label>Password:</label>
+      <input type="password" id="password" placeholder="Enter password (min 8 chars)">
+      <span class="error" id="passwordError"></span>
+
+      <label>Confirm Password:</label>
+      <input type="password" id="confirmPassword" placeholder="Re-enter password">
+      <span class="error" id="confirmPasswordError"></span>
+
+      <label>Phone Number:</label>
+      <input type="text" id="phone" placeholder="Enter 10-digit phone number">
+      <span class="error" id="phoneError"></span>
+
+      <button type="button" onclick="validateForm()">Register</button>
+
+    </form>
+  </div>
+
+  <script src="practical21.js"></script>
+</body>
+</html>

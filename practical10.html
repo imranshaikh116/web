@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Dynamic Content</title>
+  <link rel="stylesheet" href="practical10.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Dynamic Content using DOM</h2>
+
+    <!-- Change Text -->
+    <section>
+      <h3>1. Change Text Content</h3>
+      <p id="textDemo">This is the original text.</p>
+      <button onclick="changeText()">Change Text</button>
+    </section>
+
+    <!-- Change Style -->
+    <section>
+      <h3>2. Change Background Color</h3>
+      <div id="colorBox">This box will change color.</div>
+      <button onclick="changeColor()">Change Color</button>
+    </section>
+
+    <!-- Add New Element -->
+    <section>
+      <h3>3. Add New List Item</h3>
+      <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+      <button onclick="addItem()">Add Item</button>
+    </section>
+
+    <!-- Show / Hide -->
+    <section>
+      <h3>4. Show / Hide Element</h3>
+      <p id="toggleText">This text can be shown or hidden.</p>
+      <button onclick="toggleVisibility()">Toggle Visibility</button>
+    </section>
+
+    <!-- Display User Input -->
+    <section>
+      <h3>5. Display User Input</h3>
+      <input type="text" id="userInput" placeholder="Type something...">
+      <button onclick="displayInput()">Show</button>
+      <p id="inputOutput"></p>
+    </section>
+  </div>
+
+  <script src="practical10.js"></script>
+</body>
+</html>

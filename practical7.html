@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Result Dashboard</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="practical7.css">
+
+  <!-- Internal CSS -->
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    th {
+      background-color: #4a235a;
+      color: white;
+      padding: 10px 14px;
+      text-align: center;
+    }
+    td {
+      border: 1px solid #ccc;
+      padding: 9px 14px;
+      text-align: center;
+    }
+    tr:nth-child(even) {
+      background-color: #f3e5f5;
+    }
+    .grade-a {
+      color: green;
+      font-weight: bold;
+    }
+    .grade-b {
+      color: #e65100;
+      font-weight: bold;
+    }
+    .grade-c {
+      color: #c62828;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Student Result Dashboard</h1>
+
+  <h2>Student: Imran Shaikh &nbsp; | &nbsp; Roll No: 101 &nbsp; | &nbsp; Course: BE</h2>
+
+  <h3>Subject-wise Marks</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Sr. No.</th>
+        <th>Subject</th>
+        <th>Max Marks</th>
+        <th>Marks Obtained</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Inline CSS for top scorer row -->
+      <tr style="background-color: #fff9c4; font-weight: bold;">
+        <td>1</td>
+        <td>Web Technology</td>
+        <td>100</td>
+        <td>92</td>
+        <td class="grade-a">A</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>DBMS</td>
+        <td>100</td>
+        <td>78</td>
+        <td class="grade-a">A</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>C Programming</td>
+        <td>100</td>
+        <td>65</td>
+        <td class="grade-b">B</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Mathematics</td>
+        <td>100</td>
+        <td>55</td>
+        <td class="grade-c">C</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Communication Skills</td>
+        <td>100</td>
+        <td>80</td>
+        <td class="grade-a">A</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="summary">
+    <p><b>Total Marks:</b> 370 / 500</p>
+    <p><b>Percentage:</b> 74%</p>
+    <p><b>Overall Grade:</b> <span class="grade-b">B</span></p>
+    <p><b>Result:</b> <span style="color:green; font-weight:bold;">PASS</span></p>
+  </div>
+
+</body>
+</html>
