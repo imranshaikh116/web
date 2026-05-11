@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Result Dashboard</title>
+
+  <!-- Internal CSS -->
+  <style>
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      margin-top: 16px;
+    }
+    th {
+      background: #2c3e50;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    td {
+      padding: 9px 12px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    tr:nth-child(even) { background: #f2f2f2; }
+  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="result_dashboard.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Student Result Dashboard</h1>
+  <h2>Student: Imran Khan &nbsp;|&nbsp; Roll No: 22</h2>
+
+  <h3>Subject-wise Marks</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Marks Obtained</th>
+        <th>Max Marks</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Inline CSS used for top scorer row -->
+      <tr style="background: #d4efdf; font-weight: bold;">
+        <td>Database Management Systems</td>
+        <td>88</td>
+        <td>100</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Microprocessor</td>
+        <td>76</td>
+        <td>100</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Web Technology</td>
+        <td>82</td>
+        <td>100</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Theory of Computation</td>
+        <td>65</td>
+        <td>100</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>Operating Systems</td>
+        <td>71</td>
+        <td>100</td>
+        <td>B</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="summary">
+    <p><b>Total Marks:</b> 382 / 500</p>
+    <p><b>Percentage:</b> 76.4%</p>
+    <p><b>Result:</b> <span class="pass">PASS</span></p>
+  </div>
+</div>
+
+</body>
+</html>

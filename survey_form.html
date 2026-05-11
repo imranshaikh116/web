@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; background: #f4f4f4; }
+    .container { background: white; padding: 25px; width: 450px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+    h2 { text-align: center; }
+    label { display: block; margin-top: 12px; font-weight: bold; }
+    input[type="text"], input[type="email"], textarea, select {
+      width: 100%; padding: 7px; margin-top: 4px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;
+    }
+    .option-group { margin-top: 8px; }
+    .option-group label { font-weight: normal; display: inline; }
+    input[type="submit"] {
+      margin-top: 18px; width: 100%; padding: 9px;
+      background: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;
+    }
+    input[type="submit"]:hover { background: #2980b9; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>Survey Form</h2>
+  <form>
+
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email">
+
+    <label>Age Group</label>
+    <select>
+      <option>Below 18</option>
+      <option>18 - 25</option>
+      <option>26 - 35</option>
+      <option>Above 35</option>
+    </select>
+
+    <label>Gender</label>
+    <div class="option-group">
+      <input type="radio" name="gender"> <label>Male</label>&nbsp;&nbsp;
+      <input type="radio" name="gender"> <label>Female</label>&nbsp;&nbsp;
+      <input type="radio" name="gender"> <label>Other</label>
+    </div>
+
+    <label>Interests (select all that apply)</label>
+    <div class="option-group">
+      <input type="checkbox"> <label>Technology</label><br>
+      <input type="checkbox"> <label>Sports</label><br>
+      <input type="checkbox"> <label>Music</label><br>
+      <input type="checkbox"> <label>Reading</label><br>
+    </div>
+
+    <label>Feedback</label>
+    <textarea rows="4" placeholder="Write your feedback here..."></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</body>
+</html>

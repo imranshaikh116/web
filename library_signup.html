@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Signup</title>
+  <link rel="stylesheet" href="library_signup.css">
+</head>
+<body>
+<div class="form-box">
+  <h2>College Library Signup</h2>
+  <form id="signupForm">
+
+    <label>Full Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <span class="error" id="nameErr"></span>
+
+    <label>Email</label>
+    <input type="text" id="email" placeholder="Enter your email">
+    <span class="error" id="emailErr"></span>
+
+    <label>Mobile Number</label>
+    <input type="text" id="mobile" placeholder="Enter 10-digit mobile number">
+    <span class="error" id="mobileErr"></span>
+
+    <label>Department</label>
+    <input type="text" id="dept" placeholder="e.g. Computer Engineering">
+    <span class="error" id="deptErr"></span>
+
+    <label>Year</label>
+    <select id="year">
+      <option value="">-- Select Year --</option>
+      <option>First Year</option>
+      <option>Second Year</option>
+      <option>Third Year</option>
+      <option>Final Year</option>
+    </select>
+    <span class="error" id="yearErr"></span>
+
+    <button type="button" onclick="validate()">Sign Up</button>
+    <p class="success" id="successMsg"></p>
+  </form>
+</div>
+
+<script src="library_signup.js"></script>
+</body>
+</html>

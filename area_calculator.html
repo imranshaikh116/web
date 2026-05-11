@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Area Calculator</title>
+  <link rel="stylesheet" href="area_calculator.css">
+</head>
+<body>
+<div class="calc-box">
+  <h2>Area Calculator</h2>
+
+  <label>Shape</label>
+  <select id="shape" onchange="showInputs()">
+    <option value="">-- Select Shape --</option>
+    <option value="1">Rectangle</option>
+    <option value="2">Triangle</option>
+    <option value="3">Circle</option>
+  </select>
+
+  <div id="inputFields"></div>
+
+  <button onclick="calcArea()">Calculate Area</button>
+  <p id="result"></p>
+</div>
+
+<script src="area_calculator.js"></script>
+</body>
+</html>

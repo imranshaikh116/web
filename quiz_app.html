@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Quiz</title>
+  <link rel="stylesheet" href="quiz_app.css">
+</head>
+<body>
+<div class="quiz-box">
+  <h2>Simple Quiz</h2>
+  <form id="quizForm">
+
+    <div class="question">
+      <p>1. What does HTML stand for?</p>
+      <label><input type="radio" name="q1" value="a"> HyperText Markup Language</label>
+      <label><input type="radio" name="q1" value="b"> High-Level Text Machine Language</label>
+      <label><input type="radio" name="q1" value="c"> Hyperlink Text Making Language</label>
+    </div>
+
+    <div class="question">
+      <p>2. Which language is used for styling web pages?</p>
+      <label><input type="radio" name="q2" value="a"> HTML</label>
+      <label><input type="radio" name="q2" value="b"> CSS</label>
+      <label><input type="radio" name="q2" value="c"> JavaScript</label>
+    </div>
+
+    <div class="question">
+      <p>3. What does CSS stand for?</p>
+      <label><input type="radio" name="q3" value="a"> Computer Style Sheets</label>
+      <label><input type="radio" name="q3" value="b"> Cascading Style Sheets</label>
+      <label><input type="radio" name="q3" value="c"> Creative Style System</label>
+    </div>
+
+    <div class="question">
+      <p>4. Which tag is used to create a hyperlink in HTML?</p>
+      <label><input type="radio" name="q4" value="a"> &lt;link&gt;</label>
+      <label><input type="radio" name="q4" value="b"> &lt;a&gt;</label>
+      <label><input type="radio" name="q4" value="c"> &lt;href&gt;</label>
+    </div>
+
+    <div class="question">
+      <p>5. Which symbol is used for comments in JavaScript?</p>
+      <label><input type="radio" name="q5" value="a"> //</label>
+      <label><input type="radio" name="q5" value="b"> ##</label>
+      <label><input type="radio" name="q5" value="c"> **</label>
+    </div>
+
+    <div class="question">
+      <p>6. What does PHP stand for?</p>
+      <label><input type="radio" name="q6" value="a"> Personal Home Page</label>
+      <label><input type="radio" name="q6" value="b"> Preprocessed Hypertext Pages</label>
+      <label><input type="radio" name="q6" value="c"> PHP: Hypertext Preprocessor</label>
+    </div>
+
+    <div class="question">
+      <p>7. Which HTML tag is used to define an unordered list?</p>
+      <label><input type="radio" name="q7" value="a"> &lt;ol&gt;</label>
+      <label><input type="radio" name="q7" value="b"> &lt;ul&gt;</label>
+      <label><input type="radio" name="q7" value="c"> &lt;li&gt;</label>
+    </div>
+
+    <div class="question">
+      <p>8. Which method submits form data in the URL?</p>
+      <label><input type="radio" name="q8" value="a"> POST</label>
+      <label><input type="radio" name="q8" value="b"> PUT</label>
+      <label><input type="radio" name="q8" value="c"> GET</label>
+    </div>
+
+    <div class="question">
+      <p>9. Which function writes to the browser in JavaScript?</p>
+      <label><input type="radio" name="q9" value="a"> document.write()</label>
+      <label><input type="radio" name="q9" value="b"> console.log()</label>
+      <label><input type="radio" name="q9" value="c"> print()</label>
+    </div>
+
+    <div class="question">
+      <p>10. Which attribute makes an input field required in HTML5?</p>
+      <label><input type="radio" name="q10" value="a"> mandatory</label>
+      <label><input type="radio" name="q10" value="b"> validate</label>
+      <label><input type="radio" name="q10" value="c"> required</label>
+    </div>
+
+    <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    <p id="scoreDisplay"></p>
+  </form>
+</div>
+
+<script src="quiz_app.js"></script>
+</body>
+</html>

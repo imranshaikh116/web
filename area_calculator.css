@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; background: #f4f4f4; display: flex; justify-content: center; padding: 50px; }
+.calc-box { background: white; padding: 28px; width: 340px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+h2 { text-align: center; }
+label { display: block; margin-top: 14px; font-weight: bold; }
+input, select { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+button { margin-top: 18px; width: 100%; padding: 10px; background: #27ae60; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; }
+button:hover { background: #219150; }
+#result { margin-top: 14px; font-size: 1.1em; font-weight: bold; text-align: center; color: #2c3e50; }

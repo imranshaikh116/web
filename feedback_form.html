@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; display: flex; justify-content: center; padding: 40px; }
+    .form-box { background: white; padding: 28px; width: 420px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+    h2 { text-align: center; }
+    label { display: block; margin-top: 14px; font-weight: bold; }
+    input[type="text"], input[type="email"], select, textarea {
+      width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
+    }
+    input[type="submit"] { margin-top: 20px; width: 100%; padding: 10px; background: #2c7be5; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; }
+    input[type="submit"]:hover { background: #1a5cbf; }
+  </style>
+</head>
+<body>
+<div class="form-box">
+  <h2>Feedback Form</h2>
+  <form action="feedback_process.php" method="POST">
+
+    <label>Your Name</label>
+    <input type="text" name="name" placeholder="Enter your name" required>
+
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Enter your email" required>
+
+    <label>Rating</label>
+    <select name="rating">
+      <option>Excellent</option>
+      <option>Good</option>
+      <option>Average</option>
+      <option>Poor</option>
+    </select>
+
+    <label>Feedback</label>
+    <textarea name="feedback" rows="4" placeholder="Write your feedback..." required></textarea>
+
+    <input type="submit" value="Submit Feedback">
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Content - DOM</title>
+  <link rel="stylesheet" href="dom_dynamic_content.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>DOM Dynamic Content Demo</h1>
+
+  <section>
+    <h2>1. Change Text</h2>
+    <p id="textBox">This is the original text.</p>
+    <button onclick="changeText()">Change Text</button>
+  </section>
+
+  <section>
+    <h2>2. Change Style</h2>
+    <p id="styleBox">Click button to change my color.</p>
+    <button onclick="changeStyle()">Change Style</button>
+  </section>
+
+  <section>
+    <h2>3. Add Element</h2>
+    <ul id="itemList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+    <button onclick="addItem()">Add Item</button>
+  </section>
+
+  <section>
+    <h2>4. Remove Element</h2>
+    <p id="removeBox">This paragraph will be removed.</p>
+    <button onclick="removeElem()">Remove Paragraph</button>
+  </section>
+
+  <section>
+    <h2>5. Show Current Date & Time</h2>
+    <p id="dateTime">--</p>
+    <button onclick="showDateTime()">Show Date & Time</button>
+  </section>
+</div>
+
+<script src="dom_dynamic_content.js"></script>
+</body>
+</html>
